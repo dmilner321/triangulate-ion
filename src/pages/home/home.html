@@ -1,14 +1,19 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Triangulation
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <h2>Triangulation</h2>
+  <p>Welcome to Triangulation, an app for finding triangles!!! Enter a row(A-F) and column(1-12) to get your triangle details Ex - F1:</p>
+  <ion-item>
+    <ion-input type="text" [(ngModel)]="gridLocation"></ion-input>
+  </ion-item>
+  <button ion-button (click)="getTriangle(gridLocation)">Get Triangle</button>
+<div>{{triangleresult}}</div><br />
+<img src="assets/imgs/triangulation1b.PNG"/>
+<p>The X,Y origin starts at the base of the F1 triangle</p>
 </ion-content>
