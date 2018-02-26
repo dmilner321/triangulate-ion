@@ -15,5 +15,6 @@ Dependencies:
 
   To run, from a cmd shell or powershell
   cd into the triangulate-ion directory - look for a package.json file.
-
-  run ionic lab - which will serve up a browser with an extension looking like your favorite iOS or Android device
+  1. run npm install - to install node module dependencies
+  2. run ionic build - build the project
+  3. run ionic lab - which will serve up a browser with an extension looking like your favorite iOS or Android device
